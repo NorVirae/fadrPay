@@ -17,10 +17,13 @@ contract Transactions {
 
     transferStruct[] transactions;
 
-    function addToBlockchain(address payable receiver, uint amount, string memory message, string memory keyword ) public {
+    function addToBlockchain(address payable receiver, uint amount, string memory message, string memory keyword )payable public {
         transactionCounter += 1;
         transactions.push(transferStruct(msg.sender, receiver, amount,  keyword, message,  block.timestamp));
+        require(msg.value > amount, "Not aenough value");
+        receiver.transfer(msg.value);
         emit Transfer(msg.sender, receiver, amount, keyword, message, block.timestamp);
+
     }
 
     function getAllTransactions() public view returns (transferStruct[] memory){
