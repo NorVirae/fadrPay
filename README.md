@@ -1,15 +1,15 @@
-# Basic Sample Hardhat Project
+``` HEY My Name is Frank if you want to own your wallet and create your own Token Here are some steps to start```
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+#fork or clone this repo
+1. Navigate to root folder and NPM install.
+2. Navigate to contract folder and Edit the name and Symbol also you could increase the total supply of token
+3. npx hardhat compile to compile solidity file.
+4. deploy to any network you want 
+5. Link Abi file in React app and you are good to go.
 
-Try running some of the following tasks:
+App comes with its own wallet, you can send and also receive crypto, you can also import the contract address
+on metamask, you also perform transactions like send and receive on metamask.
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
+Enjoy.
+
+Help Improve code.
