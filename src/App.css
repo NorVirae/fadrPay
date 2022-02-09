@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: .1rem solid ;
+  height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.crypto-card {
+  border:.2rem dotted rgb(0, 153, 255);
+  width: 20vw;
+  height: 14vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  justify-content: space-around;
+  padding: .5rem;
+  border-radius: 1.2rem;
+  font-size: 1rem;
+  background-image: linear-gradient(to right, rgb(0, 153, 255), rgb(204, 0, 255));
+}
+
+.borderUp {
+  border:.2rem dotted rgb(0, 153, 255);
+  padding: 1rem;
+  border-radius: .5rem;
+  display: flex;
+
+
+}
+
+.borderUp > * {
+  margin: .4rem;
+}
+
+.transfer {
+
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  margin:1rem 0;
+  width: 100%;
+  border: .1rem dotted  rgb(204, 0, 255);
+  border-radius: .2rem;
+  height: 2rem;
+}
+
+.input:focus{
+  outline: .1rem solid  rgb(204, 0, 255);;
+}
+
+.btn {
+  border-radius: .4rem;
+  border: none;
+  padding: .7rem;
+  cursor: pointer;
+  width: 100%;
+  transition: border 1s ease-in;
+}
+
+.btn:hover{
+  border: .1rem solid  rgb(204, 0, 255);
+
+}
